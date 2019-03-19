@@ -22,5 +22,7 @@ main.container textarea {
  width: 100%;
  max-width: 400px;
  padding: 5px;
+ min-width: 100px;
+ min-height: 50px;
 
 }
