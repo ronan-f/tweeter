@@ -1,4 +1,4 @@
-.new-tweet {
+main.container section {
  background-color: rgb(238, 238, 238);
  border-style: solid;
  border-width: 5px;
@@ -9,15 +9,16 @@
 
 .counter {
  float: right;
+ font-style: italic;
 }
 
-.container h2 {
+main.container h2 {
  border-bottom-style: solid;
  border-bottom-color: black;
  border-bottom-width: 5px;
 }
 
-#text-area {
+main.container textarea {
  width: 100%;
  padding: 5px;
 }
