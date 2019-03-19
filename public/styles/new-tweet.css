@@ -20,5 +20,7 @@ main.container h2 {
 
 main.container textarea {
  width: 100%;
+ max-width: 400px;
  padding: 5px;
+
 }
