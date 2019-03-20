@@ -1,0 +1,193 @@
+header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  main.container  {
+   background-color: rgb(238, 238, 238);
+   border-style: solid;
+   border-color: grey;
+   border-width: 5px;
+   border-radius: 20px;
+   padding: 15px;
+   box-shadow: 5px 5px 5px gray;
+   margin-top: 50px;
+  }
+  
+  .counter {
+   float: right;
+   font-style: italic;
+  }
+  
+  main.container h2 {
+   border-bottom-style: solid;
+   border-bottom-color: black;
+   border-bottom-width: 5px;
+  }
+  
+  main.container textarea {
+   width: 100%;
+   max-width: 400px;
+   padding: 5px;
+   min-width: 100px;
+   min-height: 50px;
+  }
+  
+  #tweetContainer {
+    padding: 10px;
+    margin-bottom: 50px; 
+  }
+  
+  #tweetContainer:hover {
+    text-shadow: -.25px -.25px 0 black;
+    border-color: black;
+  }
+  
+  #tweetContainer header{
+    background-color: #d2caca;
+    height: 80px;
+  }
+  
+  #tweetContainer header img {
+    width: 80px;
+    padding: 10px;
+  }
+  
+  #tweetContainer h4 {
+    width: 70%;
+    margin-top: 0;
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  
+  #tweetContainer h6 {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  #tweetContainer footer {
+    border-top-style: solid;
+    border-top-color: #000b;
+    display: flex;
+  }
+  
+  .tweets {
+    display: none;
+    margin-left: auto;
+    height: 20px;
+    width: 20px;
+  }
+  
+
+  
+  
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+main.container  {
+ background-color: rgb(238, 238, 238);
+ border-style: solid;
+ border-color: grey;
+ border-width: 5px;
+ border-radius: 20px;
+ padding: 15px;
+ box-shadow: 5px 5px 5px gray;
+ margin-top: 50px;
+}
+
+.counter {
+ float: right;
+ font-style: italic;
+}
+
+main.container h2 {
+ border-bottom-style: solid;
+ border-bottom-color: black;
+ border-bottom-width: 5px;
+}
+
+main.container textarea {
+ width: 100%;
+ max-width: 400px;
+ padding: 5px;
+ min-width: 100px;
+ min-height: 50px;
+}
+
+#tweetContainer {
+  padding: 10px;
+}
+
+#tweetContainer:hover {
+  text-shadow: -.25px -.25px 0 black,
+                .25px .25px black;
+  border-color: black;
+
+}
+
+#tweetContainer:hover .icons {
+  display: flex;
+}
+
+#tweetContainer header{
+  background-color: #d2caca;
+  height: 80px;
+}
+
+#tweetContainer header img {
+  width: 80px;
+  padding: 10px;
+}
+
+#tweetContainer h4 {
+  width: 70%;
+  margin-top: 0;
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+#tweetContainer h6 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#tweetContainer footer {
+  border-top-style: solid;
+  border-top-color: #000b;
+  display: flex;
+}
+
+.icons {
+  display: none;
+  margin-left: auto;
+}
+
+#tweetContainer:hover .tweets {
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
