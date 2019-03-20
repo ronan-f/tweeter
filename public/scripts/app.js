@@ -30,11 +30,19 @@ $('#submit-new-tweet').submit(function(event) {
 
   const $serializedTweet = $(this).serialize();
 
-  $.ajax({
-    method: 'POST',
-    url: '/tweets',
-    data: $serializedTweet
-  })
+  let limit = ($(this)[0][0].value.length);
+
+  if(limit === 0){
+    alert("Please enter some text");
+  } else if (limit > 140){
+    alert("Your tweet is too long!!!");
+  } else {
+    $.ajax({
+      method: 'POST',
+      url: '/tweets',
+      data: $serializedTweet
+    })
+  }
 })
 
 function loadTweets() {
