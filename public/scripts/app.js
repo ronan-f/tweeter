@@ -74,6 +74,7 @@ $(document).ready(function(){
           loadTweet();
           $('#tweetContainer').empty(); //Prevent tweets from being duplicated
           $('.textBox').val('');
+          $('.counter').text('140');
 
         }
       })
