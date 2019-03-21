@@ -1,18 +1,18 @@
 $(document).ready(function(){
   
-  function renderTweets(tweets) {
+  function renderTweets(tweets) { //loop through array of objects and pass each one to createTweetElement
     for(let i = 0; i < tweets.length; i ++){
       createTweetElement(tweets[i]).prependTo('#tweetContainer');
     }
   }
 
-  function createTweetElement(tweet){
+  function createTweetElement(tweet){ //Take in a tweet object and convert it to a HTML tweet
     let $tweet = $('<article>').addClass('new-tweet');
 
     let x = new Date(tweet.created_at);
     let dateString = x.toDateString();
     let timeString = x.toLocaleTimeString();
-    let finalDate = `${dateString} ${timeString}`;
+    let finalDate = `${dateString} ${timeString}`; //convert unix timestamp to readable date
 
     $tweet.append($("<header>")
           .append($("<img>").attr("src", tweet.user.avatars.small))
@@ -30,7 +30,7 @@ $(document).ready(function(){
     return $tweet;
   };
 
-  function loadTweet() {
+  function loadTweet() { //GET request to load tweets
     
     $.ajax('/tweets', {
       method: 'GET',
@@ -40,7 +40,7 @@ $(document).ready(function(){
     })
   };
 
-  loadTweet();
+  loadTweet(); //Ensures stored tweets are loaded when page is opened
 
   $('.compose').click(function(){ // click compose button to toggle slide on text input
     $('.container').slideToggle('fast');
@@ -50,14 +50,14 @@ $(document).ready(function(){
   $('.error').hide(); //hide error message on load
   $('.container').hide(); //hide tweet form on load
 
-  $('#submit-new-tweet').submit(function(event) {
-    event.preventDefault();
+  $('#submit-new-tweet').submit(function(event) { 
+    event.preventDefault(); 
 
     const $serializedTweet = $(this).serialize();
 
-    let limit = ($(this)[0][0].value.length);
+    let limit = ($(this)[0][0].value.length); //Length of message in textbox
 
-    if(limit === 0){
+    if(limit === 0){ //Run validation tests to check if tweets are valid
       $('.error').text('Error: You need to type something...');
       $('.error').slideDown('fast');
     } else if (limit > 140){
@@ -65,14 +65,14 @@ $(document).ready(function(){
       $('.error').slideDown('fast');
     } else {
 
-      $.ajax({
+      $.ajax({ //POST request for adding new tweets
         method: 'POST',
         url: '/tweets',
         data: $serializedTweet,
         success: function(data){
-          $('.error').hide();
+          $('.error').hide(); //Hide error message when user resumes typing
           loadTweet();
-          $('#tweetContainer').empty();
+          $('#tweetContainer').empty(); //Prevent tweets from being duplicated
 
         }
       })
