@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -37,7 +37,7 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
-      <button id="compose" type="button">Compose</button>
+      <button class="compose"><i class="far fa-edit"></i>Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
@@ -47,7 +47,7 @@
         <form id="submit-new-tweet" action="/tweets" method="POST">
           <textarea class="textBox" name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet" >
-          <span class="error">Error: Please input text!</span>
+          <span class="error"></span>
           <span class="counter">140</span>
         </form>
      </section>

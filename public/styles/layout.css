@@ -8,7 +8,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-  font-family: 'Roboto Condensed', sans-serif
+  
 }
 
 /*
@@ -19,6 +19,7 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif
 }
 
 /*
@@ -35,13 +36,13 @@ body {
 
  }
 
- #compose {
+ .compose {
   display: flex;
   margin-top: 8px;
   margin-left: auto;
   margin-right: 75px;
   height: 60px;
-  width: 110px;
+  width: 150;
   border: solid 2px black;
   border-radius: 10px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -51,7 +52,7 @@ body {
 
 }
 
-#compose:hover {
+.compose:hover {
   color: black;
 }
 
