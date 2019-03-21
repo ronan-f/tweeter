@@ -91,7 +91,9 @@ main.container textarea {
   border-color: black;
 }
 
-
+.textWrap {
+  overflow-wrap: break-word;
+}
 
 
 
