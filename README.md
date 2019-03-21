@@ -21,4 +21,22 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
+### This is the main homepage for Tweeter
 
+!['Main homepage']('https://github.com/ronan-f/tweeter/blob/master/docs/home-page.png?raw=true')
+
+### Tweet examples
+
+!['Tweet examples']('https://github.com/ronan-f/tweeter/blob/master/docs/tweet-examples.png?raw=true')
+
+### Note how the tweets change when the cursor hovers over
+
+!['Tweets on hover']('https://github.com/ronan-f/tweeter/blob/master/docs/tweet-on-hover.png?raw=true')
+
+### An error message appears if there's no text input
+
+!['Error message']('https://github.com/ronan-f/tweeter/blob/master/docs/error-message.png?raw=true')
+
+### This message is dynamic and adjusts depending on the input
+
+!['Alternative error']('https://github.com/ronan-f/tweeter/blob/master/docs/long-error-message.png?raw=true')
