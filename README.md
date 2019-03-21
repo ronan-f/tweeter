@@ -28,7 +28,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ### Tweet examples
 
-!['Tweet examples'](https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/tweet-examples.png)
+!['Tweet examples'](https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/tweet-examples.png =200x200)
 
 ### Note how the tweets change when the cursor hovers over
 
