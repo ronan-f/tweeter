@@ -72,12 +72,12 @@ $(document).ready(function(){
         success: function(data){
           $('.error').hide();
           loadTweet();
+          $('#tweetContainer').empty();
+
         }
       })
     }
   })
-
-  
 })
 
 
