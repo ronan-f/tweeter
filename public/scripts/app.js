@@ -48,6 +48,7 @@ $(document).ready(function(){
   })
 
   $('.error').hide(); //hide error message on load
+  $('.container').hide(); //hide tweet form on load
 
   $('#submit-new-tweet').submit(function(event) {
     event.preventDefault();
