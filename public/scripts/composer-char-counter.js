@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('textarea').on('keyup', function(){
+    $('.error').hide();
     let length = $(this).val().length;
     let thisCounter = $(this).siblings('.counter');
     length = 140 - length;

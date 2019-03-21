@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  
   function renderTweets(tweets) {
     for(let i = 0; i < tweets.length; i ++){
       createTweetElement(tweets[i]).prependTo('#tweetContainer');
@@ -12,9 +13,6 @@ $(document).ready(function(){
     let dateString = x.toDateString();
     let timeString = x.toLocaleTimeString();
     let finalDate = `${dateString} ${timeString}`;
-    
-  
-
 
     $tweet.append($("<header>")
           .append($("<img>").attr("src", tweet.user.avatars.small))
@@ -33,6 +31,7 @@ $(document).ready(function(){
   };
 
   function loadTweet() {
+    
     $.ajax('/tweets', {
       method: 'GET',
       success: function (data) {
@@ -41,7 +40,9 @@ $(document).ready(function(){
     })
   };
 
-  $('#compose').click(function(){ // click compose button to toggle slide on text input
+  loadTweet();
+
+  $('.compose').click(function(){ // click compose button to toggle slide on text input
     $('.container').slideToggle('fast');
     $('.textBox').focus();
   })
@@ -49,7 +50,7 @@ $(document).ready(function(){
   $('.error').hide(); //hide error message on load
 
   $('#submit-new-tweet').submit(function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const $serializedTweet = $(this).serialize();
 
@@ -62,7 +63,7 @@ $(document).ready(function(){
       $('.error').text('Error: Your message is too long!');
       $('.error').slideDown('fast');
     } else {
-      
+
       $.ajax({
         method: 'POST',
         url: '/tweets',
@@ -75,7 +76,7 @@ $(document).ready(function(){
     }
   })
 
-  loadTweet();
+  
 })
 
 
