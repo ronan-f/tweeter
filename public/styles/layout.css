@@ -35,3 +35,22 @@ body {
 
  }
 
+ #compose {
+  display: flex;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: 75px;
+  height: 60px;
+  width: 110px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #00a386;
+  background-color: white;
+  font-size: 24px;
+
+}
+
+#compose:hover {
+  color: black;
+}
