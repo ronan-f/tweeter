@@ -73,6 +73,7 @@ $(document).ready(function(){
           $('.error').hide(); //Hide error message when user resumes typing
           loadTweet();
           $('#tweetContainer').empty(); //Prevent tweets from being duplicated
+          $('.textBox').val('');
 
         }
       })
