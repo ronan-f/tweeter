@@ -23,21 +23,21 @@ This repository is the starter code for the project: Students will fork and clon
 
 ### This is the main homepage for Tweeter
 
-!['Main homepage']('https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/home-page.png')
+!['Main homepage'](https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/home-page.png)
 
 
 ### Tweet examples
 
-!['Tweet examples']('https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/tweet-examples.png')
+!['Tweet examples'](https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/tweet-examples.png)
 
 ### Note how the tweets change when the cursor hovers over
 
-!['Tweets on hover']('https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/tweet-on-hover.png')
+!['Tweets on hover'](https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/tweet-on-hover.png)
 
 ### An error message appears if there's no text input
 
-!['Error message']('https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/error-message.png')
+!['Error message'](https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/error-message.png)
 
 ### This message is dynamic and adjusts depending on the input
 
-!['Alternative error']('https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/long-error-message.png')
+!['Alternative error'](https://raw.githubusercontent.com/ronan-f/tweeter/master/docs/long-error-message.png)
