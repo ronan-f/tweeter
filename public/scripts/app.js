@@ -34,10 +34,12 @@ $(document).ready(function(){
     })
   };
 
-  $('#compose').click(function(){
-    $('.container').slideToggle('slow');
+  $('#compose').click(function(){ // click compose button to toggle slide on text input
+    $('.container').slideToggle('fast');
+    $('.textBox').focus();
   })
 
+  $('.error').hide(); //hide error message on load
 
   $('#submit-new-tweet').submit(function(event) {
     event.preventDefault(); 
@@ -47,15 +49,19 @@ $(document).ready(function(){
     let limit = ($(this)[0][0].value.length);
 
     if(limit === 0){
-      alert("Please enter some text");
+      $('.error').text('Error: You need to type something...');
+      $('.error').slideDown('fast');
     } else if (limit > 140){
-      alert("Your tweet is too long!!!");
+      $('.error').text('Error: Your message is too long!');
+      $('.error').slideDown('fast');
     } else {
+      
       $.ajax({
         method: 'POST',
         url: '/tweets',
         data: $serializedTweet,
         success: function(data){
+          $('.error').hide();
           postTweet();
         }
       })

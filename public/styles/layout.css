@@ -54,3 +54,8 @@ body {
 #compose:hover {
   color: black;
 }
+
+.error {
+  color: red;
+  font-weight: 700;
+}
