@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   $('.error').hide(); //hide error message on load
   $('.container').hide(); //hide tweet form on load
-  
+
   function renderTweets(tweets) { //loop through array of objects and pass each one to createTweetElement
     for(let i = 0; i < tweets.length; i ++){
       createTweetElement(tweets[i]).prependTo('#tweetContainer');
@@ -10,7 +10,7 @@ $(document).ready(function(){
   }
 
   function createTweetElement(tweet){ //Take in a tweet object and convert it to a HTML tweet
-    let $tweet = $('<article>').addClass('new-tweet'); 
+    let $tweet = $('<article>').addClass('new-tweet');
     let convertDate = new Date(tweet.created_at);
     let dateString = convertDate.toDateString();
     let timeString = convertDate.toLocaleTimeString();
@@ -33,7 +33,7 @@ $(document).ready(function(){
   }
 
   function loadTweet() { //GET request to load tweets
-    
+
     $.ajax('/tweets', {
       method: 'GET',
       success: function (data) {
@@ -49,16 +49,16 @@ $(document).ready(function(){
     $('.textBox').focus();
   })
 
-  $('#submit-new-tweet').submit(function(event) { 
-    event.preventDefault(); 
+  $('#submit-new-tweet').submit(function(event) {
+    event.preventDefault();
 
     const $serializedTweet = $(this).serialize();
     const limit = ($(this)[0][0].value.length); //Length of message in textbox
 
-    if(limit === 0){ //Run validation tests to check if tweets are valid
-      $('.error').text('Error: You need to type something...').slideDown('fast'); 
+    if(limit === 0 || !ctype_space($serializedTweet)){ //Run validation tests to check if tweets are valid
+      $('.error').text('Error: You need to type something...').slideDown('fast');
     } else if (limit > 140){
-      $('.error').text('Error: Your message is too long!').slideDown('fast');      
+      $('.error').text('Error: Your message is too long!').slideDown('fast');
     } else {
 
       $.ajax({ //POST request for adding new tweets
@@ -74,7 +74,7 @@ $(document).ready(function(){
       })
     }
   })
-})
+}) hellooeoeooeoeoeo
 
 
 

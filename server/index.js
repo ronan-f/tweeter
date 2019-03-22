@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 MongoClient.connect(MONGODB_URI, (err, db) => {
-  
+
   if (err) {
     console.error(`Failed to connect: ${MONGODB_URI}`);
     throw err;
