@@ -23,9 +23,9 @@ $(document).ready(function(){
           .append($("<footer>")
           .append($("<div>").addClass("tweetContainer").text(finalDate))
           .append($("<div>").addClass("iconContainer")
-            .append($("<img>").addClass("icons").attr("src", "https://cdn3.iconfinder.com/data/icons/nautical-icons/512/Flag-512.png"))
-            .append($("<img>").addClass("icons").attr("src", "https://cdn3.iconfinder.com/data/icons/pyconic-icons-1-2/512/heart-outline-512.png"))
-            .append($("<img>").addClass("icons").attr("src", "https://cdn2.iconfinder.com/data/icons/flat-and-simple-pack-3/512/2_Arrow_circle_history_refresh-512.png")))
+            .append($('<i class="fas fa-flag"></i>').addClass("icons"))
+            .append($('<i class="fas fa-heart"></i>').addClass("icons"))
+            .append($('<i class="fas fa-retweet"></i>').addClass("icons")))
           )
     return $tweet;
   };

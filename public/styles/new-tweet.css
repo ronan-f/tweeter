@@ -66,8 +66,7 @@ main.container textarea {
 }
 
 .icons {
-  display: none;
-  height: 20px;
+  padding-top: 5px;
   width: 20px;
 }
 
@@ -82,8 +81,8 @@ main.container textarea {
   margin-bottom: 20px;
 }
 
-#tweetContainer article:hover .icons {
-  display: flex;
+#tweetContainer article:hover .iconContainer {
+  opacity: 1;
 }
 
 #tweetContainer article:hover {
@@ -95,6 +94,8 @@ main.container textarea {
   overflow-wrap: break-word;
 }
 
-
+.iconContainer {
+  opacity: 0;
+}
 
 
